@@ -8,30 +8,26 @@ public abstract class Animal implements Runnable, Eatable, Speakerable, Greetabl
         this.name = name;
         this.age = age;
         sayHello();
-        run();
-        eat();
-        makeSound();
     }
 
-    public static Animal createAnimals(String type, String name, int age) {
+    public static Animal createAnimal(String type, String name, int age) {
         switch (type) {
             case "Dog":
                 return new Dog(name, age);
             case "Cat":
                 return new Cat(name, age);
             default:
-                System.out.println(" ");
-                return null;
+                throw new RuntimeException("Такого животного не существует\n");
         }
     }
 
     public String getName() {
-        return name;
+        return this.name;
 
     }
 
     public int getAge() {
-        return age;
+        return this.age;
     }
 }
 
