@@ -5,6 +5,7 @@ public class Main {
         Animal cat = Animal.createAnimals("Cat", "Муся", 5);
         System.out.println("\n");
         Animal dog = Animal.createAnimals("Dog", "Вольт", 9);
+        System.out.println();
 
     }
 }
