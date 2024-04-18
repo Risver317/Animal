@@ -8,12 +8,12 @@ public class Cat extends Animal {
 
     @Override
     public void run() {
-        System.out.println("Я могу бегать");
+        System.out.println("Я бегаю");
     }
 
     @Override
     public void eat() {
-        System.out.println("Я хочу кушать");
+        System.out.println("Я кушаю");
     }
 
     @Override

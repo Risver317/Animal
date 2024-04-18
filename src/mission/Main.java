@@ -2,11 +2,10 @@ package mission;
 
 public class Main {
     public static void main(String[] args) {
-        Animal cat = Animal.createAnimals("Cat", "Муся", 5);
-        System.out.println("\n");
-        Animal dog = Animal.createAnimals("Dog", "Вольт", 9);
+        Animal cat = Animal.createAnimal("Cat", "Муся", 5);
         System.out.println();
-
+        Animal dog = Animal.createAnimal("Dog", "Вольт", 9);
+        cat.run();
     }
 }
 

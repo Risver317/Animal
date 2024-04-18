@@ -11,12 +11,12 @@ public class Dog extends Animal {
 
     @Override
     public void run() {
-        System.out.println("Я хочу бегать");
+        System.out.println("Я бегаю");
     }
 
     @Override
     public void eat() {
-        System.out.println("Я хочу кушать");
+        System.out.println("Я кушаю");
     }
 
     @Override
