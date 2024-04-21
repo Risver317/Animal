@@ -12,15 +12,18 @@ public class Main {
 
 
     public static void personCreate() {
+        Person person = null;
         System.out.println("Хотите создать человека? Да/Нет");
         Scanner scanner = new Scanner(System.in);
-        String person = scanner.nextLine();
-        if (person.equalsIgnoreCase("Да")) {
+        String answer = scanner.nextLine();
+        if (answer.equalsIgnoreCase("Да")) {
             System.out.println("Напишите имя человека");
             String name = scanner.nextLine();
             System.out.println("Напишите возраст человека");
             int age = scanner.nextInt();
-        } else if (person.equalsIgnoreCase("Нет")) {
+            person = new Person(name, age);
+            System.out.println(person);
+        } else if (answer.equalsIgnoreCase("Нет")) {
             throw new RuntimeException("Человек не создан");
         } else {
             throw new RuntimeException("Вы ввели что-то не так");
