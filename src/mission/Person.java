@@ -1,30 +1,36 @@
 package mission;
 
-public abstract class Animal implements Runnable, Eatable, Speakerable, Greetable {
+public class Person {
     private String name;
     private int age;
 
-    public Animal(String name, int age) {
+
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
-        sayHello();
     }
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
 
-    public String getName() {
-        return this.name;
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public int getAge() {
-        return this.age;
+        return age;
+    }
+
+    public String getName() {
+        return name;
     }
 }
-
